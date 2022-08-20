@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Avatar View Controller-->
+        <scene sceneID="7Sd-h0-d2d">
+            <objects>
+                <viewController storyboardIdentifier="avatarPage" id="zb9-xE-gTK" customClass="AvatarViewController" customModule="NewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1V9-wv-9gf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Ej-zy-7GT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="369"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11j-pt-WvQ">
+                                <rect key="frame" x="20" y="477" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9by-WH-Fhh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="11j-pt-WvQ" firstAttribute="top" secondItem="0Ej-zy-7GT" secondAttribute="bottom" constant="20" id="65g-PK-dpf"/>
+                            <constraint firstItem="0Ej-zy-7GT" firstAttribute="leading" secondItem="9by-WH-Fhh" secondAttribute="leading" id="Ivg-LL-hkC"/>
+                            <constraint firstItem="9by-WH-Fhh" firstAttribute="trailing" secondItem="0Ej-zy-7GT" secondAttribute="trailing" id="OY2-OF-NwH"/>
+                            <constraint firstItem="11j-pt-WvQ" firstAttribute="leading" secondItem="9by-WH-Fhh" secondAttribute="leading" constant="20" id="XjX-Hl-NZ0"/>
+                            <constraint firstItem="9by-WH-Fhh" firstAttribute="trailing" secondItem="11j-pt-WvQ" secondAttribute="trailing" constant="20" id="gnB-L0-JhE"/>
+                            <constraint firstItem="0Ej-zy-7GT" firstAttribute="top" secondItem="9by-WH-Fhh" secondAttribute="top" id="rEg-0y-Q4F"/>
+                            <constraint firstItem="0Ej-zy-7GT" firstAttribute="height" secondItem="1V9-wv-9gf" secondAttribute="height" multiplier="0.41183" id="taH-6d-zeI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pzU-XG-b6U">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward.circle.fill" catalog="system" id="LaE-4U-2fJ">
+                            <connections>
+                                <action selector="backButton:" destination="zb9-xE-gTK" id="oX9-n3-U5y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="avatarImageView" destination="0Ej-zy-7GT" id="4Xs-RY-lc6"/>
+                        <outlet property="avatarNameLabel" destination="11j-pt-WvQ" id="RyI-ep-sd0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iup-OW-pun" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4733.3333333333339" y="2255.3571428571427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SVG-uQ-rn5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cie-dN-ATi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T7C-g4-9iC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zb9-xE-gTK" kind="relationship" relationship="rootViewController" id="kgx-pp-6GD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGc-zb-0Zb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3823.188405797102" y="2255.3571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

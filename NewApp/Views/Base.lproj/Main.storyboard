@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jBa-FH-ANM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="3Di-4J-2QT">
+            <objects>
+                <viewController id="3EP-PI-0iu" customClass="MainViewController" customModule="NewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dZK-R9-HpU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github" translatesAutoresizingMaskIntoConstraints="NO" id="Cio-e5-Cja">
+                                <rect key="frame" x="20" y="138" width="374" height="167"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="J2z-sF-Aeb">
+                                <rect key="frame" x="20" y="325" width="374" height="355"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyy-Bn-uTt">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="sHc-7Y-7GP"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="RANDOM EMOJI">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="randomEmojiButtonTapped:" destination="3EP-PI-0iu" eventType="touchUpInside" id="5q4-bE-03a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiA-7H-IFd">
+                                        <rect key="frame" x="0.0" y="76" width="374" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="lwj-FC-9yU"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="EMOJI LIST">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="emojiListButtonTapped:" destination="3EP-PI-0iu" eventType="touchUpInside" id="FaY-fo-ixk"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3sx-jK-O1R">
+                                        <rect key="frame" x="0.0" y="152" width="374" height="51"/>
+                                        <subviews>
+                                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gW4-ET-Mu1">
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="51"/>
+                                                <color key="barTintColor" red="0.47025473730166034" green="0.42066033191307695" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </searchBar>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIy-72-16Y">
+                                                <rect key="frame" x="192" y="0.0" width="182" height="51"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="SEARCH">
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="searchButtonTapped:" destination="3EP-PI-0iu" eventType="touchUpInside" id="pZh-mP-fsV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbD-sB-QAA">
+                                        <rect key="frame" x="0.0" y="229" width="374" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Zke-5k-CGa"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="AVATAR LIST">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="avatarListButtonTapped:" destination="3EP-PI-0iu" eventType="touchUpInside" id="Wwe-7a-rA9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KER-ra-QOU">
+                                        <rect key="frame" x="0.0" y="305" width="374" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="QZA-1D-wJs"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="APPLE REPOS">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="appleReposButtonTapped:" destination="3EP-PI-0iu" eventType="touchUpInside" id="kdn-IQ-BhZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44705885649999999" green="0.40392160420000001" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YPl-jO-CQs"/>
+                        <color key="backgroundColor" red="0.45098042490000001" green="0.40392160420000001" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Cio-e5-Cja" firstAttribute="top" secondItem="YPl-jO-CQs" secondAttribute="top" constant="50" id="ErN-hk-CpU"/>
+                            <constraint firstItem="YPl-jO-CQs" firstAttribute="trailing" secondItem="J2z-sF-Aeb" secondAttribute="trailing" constant="20" id="Q02-Sj-3Kc"/>
+                            <constraint firstItem="J2z-sF-Aeb" firstAttribute="top" secondItem="Cio-e5-Cja" secondAttribute="bottom" constant="20" id="doI-O1-Zkc"/>
+                            <constraint firstItem="YPl-jO-CQs" firstAttribute="trailing" secondItem="Cio-e5-Cja" secondAttribute="trailing" constant="20" id="jBO-wg-Qt6"/>
+                            <constraint firstItem="J2z-sF-Aeb" firstAttribute="leading" secondItem="YPl-jO-CQs" secondAttribute="leading" constant="20" id="tp4-cJ-j47"/>
+                            <constraint firstItem="Cio-e5-Cja" firstAttribute="height" secondItem="dZK-R9-HpU" secondAttribute="height" multiplier="0.186384" id="uSd-BV-4vh"/>
+                            <constraint firstItem="Cio-e5-Cja" firstAttribute="leading" secondItem="YPl-jO-CQs" secondAttribute="leading" constant="20" id="zRV-MI-LTd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tQo-03-eg8"/>
+                    <connections>
+                        <outlet property="appleReposButton" destination="KER-ra-QOU" id="OZF-Yk-b86"/>
+                        <outlet property="avatarListButton" destination="fbD-sB-QAA" id="6v5-Uz-Zeg"/>
+                        <outlet property="emojiListButton" destination="aiA-7H-IFd" id="VWR-3e-2aK"/>
+                        <outlet property="randomEmojiButton" destination="cyy-Bn-uTt" id="LBs-H0-wYz"/>
+                        <outlet property="randomImageView" destination="Cio-e5-Cja" id="PBK-Ne-xHa"/>
+                        <outlet property="searchBar" destination="gW4-ET-Mu1" id="Yjq-VD-yZk"/>
+                        <outlet property="searchButton" destination="jIy-72-16Y" id="j8e-Fx-m6R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KlO-1f-JGv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2097" y="759"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2fN-Sd-G2M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jBa-FH-ANM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CqR-jp-z7d">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3EP-PI-0iu" kind="relationship" relationship="rootViewController" id="wdz-pL-Hm5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cJ-Dr-Hoz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1190" y="759"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="github" width="400" height="400"/>
+    </resources>
+</document>
