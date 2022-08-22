@@ -12,16 +12,16 @@ class RepoManager {
     
     private static let provider = MoyaProvider<RepoAPI>()
     
-    static func getRepos(completion: @escaping  ([RepoModel]) -> Void) {
+    static func getRepos(completion: @escaping  (Result<[RepoModel], Error>) -> Void) {
 
         provider.request(.getRepos) { result in
             switch result {
             case .success(let response):
                 print(response.data )
                 let data = try! JSONDecoder().decode( [RepoModel].self, from: response.data as Data )
-                completion(data)
+                completion(.success(data))
             case .failure(let error):
-                print(error.localizedDescription)
+                completion(.failure(error))
             }
         }
     }

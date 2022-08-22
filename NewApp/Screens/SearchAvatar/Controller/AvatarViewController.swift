@@ -30,13 +30,21 @@ extension AvatarViewController {
     
     func fetchAvatar() {
         AvatarManager.getAvatars(userName: searchBarQuery.lowercased()) { [weak self] result in
-            if let imageURL = result.avatar_url {
-                self?.searchOfAvatarsVM.save(url: imageURL)
+            
+            switch result {
+            case .success(let result) :
+                if let imageURL = result.avatar_url {
+                    self?.searchOfAvatarsVM.save(url: imageURL)
+                }
+                DispatchQueue.main.async {
+                    self?.avatarImageView.cl_setImage(urlString: result.avatar_url)
+                    self?.avatarNameLabel.text = result.login ?? "No Such User"
+                }
+            case .failure(let err):
+                print(err.localizedDescription)
             }
-            DispatchQueue.main.async {
-                self?.avatarImageView.cl_setImage(urlString: result.avatar_url)
-                self?.avatarNameLabel.text = result.login ?? "No Such User"
-            }
+            
+            
         }
     }
     

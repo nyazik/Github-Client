@@ -50,10 +50,16 @@ extension ReposViewController {
 extension ReposViewController {
     func fetchRepos() {
         RepoManager.getRepos { result in
-            self.repoVM = ListOfReposViewModel(repoModel: result)
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
+            switch result {
+            case .success(let result) :
+                self.repoVM = ListOfReposViewModel(repoModel: result)
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            case .failure(let err):
+                print(err.localizedDescription)
             }
+            
         }
     }
 }

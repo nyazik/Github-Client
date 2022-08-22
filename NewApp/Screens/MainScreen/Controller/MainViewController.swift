@@ -54,7 +54,13 @@ extension MainViewController {
     
     func fetchEmojies() {
         EmojiManager.getEmoji { result in
-            self.mainVM.listOfEmojis = result
+            switch result {
+            case .success(let result) :
+                self.mainVM.listOfEmojis = result
+            case .failure(let err):
+                print(err.localizedDescription)
+            }
+            
         }
     }
     
