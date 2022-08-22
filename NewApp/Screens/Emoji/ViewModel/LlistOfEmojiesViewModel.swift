@@ -5,7 +5,6 @@
 //  Created by Nyazik Byashimova on 18.08.2022.
 //
 
-import Foundation
 import UIKit
 
 struct MainLlistOfEmojiesViewModel {
