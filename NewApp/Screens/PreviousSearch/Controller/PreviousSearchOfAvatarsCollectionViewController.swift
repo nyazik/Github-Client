@@ -13,28 +13,16 @@ private let reuseIdentifier = "previousSearch"
 class PreviousSearchOfAvatarsCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var previousSearchOfAvatarsVM : PreviousSearchOfAvatarsViewModel!
-    
     let realm = try! Realm()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customizeUI()
         fetchAvatarsFromDB()
     }
     
-    func customizeUI() {
-        self.collectionView.backgroundColor = .lightGray
-    }
+    //MARK: - UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
     
-    func fetchAvatarsFromDB() {
-        let avatars = realm.objects(SavesAvatarsModel.self)
-        previousSearchOfAvatarsVM = PreviousSearchOfAvatarsViewModel(savedAvatarsModel: avatars)
-        self.collectionView.reloadData()
-    }
-    
-    @IBAction func backButton(_ sender: Any) {
-        self.dismiss(animated: false)
-    }
-
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return previousSearchOfAvatarsVM.numberOfSections
     }
@@ -61,5 +49,34 @@ class PreviousSearchOfAvatarsCollectionViewController: UICollectionViewControlle
         return UIEdgeInsets(top: 25, left: 15, bottom: 0, right: 15)
     }
  
+}
 
+
+//MARK: - ACTIONS
+extension PreviousSearchOfAvatarsCollectionViewController {
+    
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: false)
+    }
+    
+}
+
+//MARK: - FETCH FROM DB
+extension PreviousSearchOfAvatarsCollectionViewController {
+    
+    func fetchAvatarsFromDB() {
+        let avatars = realm.objects(SavesAvatarsModel.self)
+        previousSearchOfAvatarsVM = PreviousSearchOfAvatarsViewModel(savedAvatarsModel: avatars)
+        self.collectionView.reloadData()
+    }
+    
+}
+
+//MARK: - UI
+extension PreviousSearchOfAvatarsCollectionViewController {
+    
+    func customizeUI() {
+        self.collectionView.backgroundColor = .lightGray
+    }
+    
 }

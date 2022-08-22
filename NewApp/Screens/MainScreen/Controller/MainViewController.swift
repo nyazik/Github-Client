@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 class MainViewController: UIViewController {
     
@@ -25,6 +24,12 @@ class MainViewController: UIViewController {
         fetchEmojies()
         customizeUI()
     }
+}
+
+
+//MARK: - UI
+
+extension MainViewController {
     
     func customizeUI() {
         if searchBar.text == "" {
@@ -41,11 +46,23 @@ class MainViewController: UIViewController {
         searchBar.placeholder = "Search Avatars"
     }
     
+}
+
+//MARK: - FETCH EMOJIES
+
+extension MainViewController {
+    
     func fetchEmojies() {
         EmojiManager.getEmoji { result in
             self.mainVM.listOfEmojis = result
         }
     }
+    
+}
+
+//MARK: - ACTIONS
+
+extension MainViewController {
     
     @IBAction func appleReposButtonTapped(_ sender: Any) {
         NavigationHelper.openReposList(presenting: self)
@@ -72,6 +89,7 @@ class MainViewController: UIViewController {
 }
 
 //MARK: - UITextFieldDelegate
+
 extension MainViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

@@ -1,28 +1,28 @@
 //
-//  EmojiService.swift
+//  AvatarService.swift
 //  NewApp
 //
-//  Created by Nyazik Byashimova on 17.08.2022.
+//  Created by Nyazik Byashimova on 20.08.2022.
 //
 
 import Foundation
 import Moya
 
-public enum EmojiService {
+public enum AvatarAPI {
     
-    case getEmojies
+    case getAvatar(userName : String)
     
 }
 
-extension EmojiService : TargetType {
+extension AvatarAPI : TargetType {
     public var baseURL: URL {
         return URL.init(string: NetworkManager.baseUrl)!
     }
     
     public var path: String {
         switch self {
-        case .getEmojies:
-            return "emojis"
+        case .getAvatar(let userName):
+            return "users/\(userName)"
         }
     }
     

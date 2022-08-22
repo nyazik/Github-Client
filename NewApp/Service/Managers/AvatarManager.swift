@@ -10,7 +10,7 @@ import Moya
 
 class AvatarManager {
     
-    private static let provider = MoyaProvider<AvatarService>()
+    private static let provider = MoyaProvider<AvatarAPI>()
     
     static func getAvatars(userName : String, completion: @escaping  (AvatarModel) -> Void) {
 

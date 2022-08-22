@@ -10,7 +10,7 @@ import Moya
 
 class RepoManager {
     
-    private static let provider = MoyaProvider<RepoService>()
+    private static let provider = MoyaProvider<RepoAPI>()
     
     static func getRepos(completion: @escaping  ([RepoModel]) -> Void) {
 

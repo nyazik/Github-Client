@@ -5,7 +5,6 @@
 //  Created by Nyazik Byashimova on 20.08.2022.
 //
 
-import Foundation
 import RealmSwift
 import UIKit
 

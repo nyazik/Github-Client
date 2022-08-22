@@ -1,28 +1,28 @@
 //
-//  AvatarService.swift
+//  RepoService.swift
 //  NewApp
 //
-//  Created by Nyazik Byashimova on 20.08.2022.
+//  Created by Nyazik Byashimova on 19.08.2022.
 //
 
 import Foundation
 import Moya
 
-public enum AvatarService {
+public enum RepoAPI {
     
-    case getAvatar(userName : String)
+    case getRepos
     
 }
 
-extension AvatarService : TargetType {
+extension RepoAPI : TargetType {
     public var baseURL: URL {
         return URL.init(string: NetworkManager.baseUrl)!
     }
     
     public var path: String {
         switch self {
-        case .getAvatar(let userName):
-            return "users/\(userName)"
+        case .getRepos:
+            return "users/apple/repos"
         }
     }
     

@@ -10,7 +10,7 @@ import Moya
 
 class EmojiManager {
     
-    private static let provider = MoyaProvider<EmojiService>()
+    private static let provider = MoyaProvider<EmojiAPI>()
     
     static func getEmoji(completion: @escaping  ([EmojiModel]) -> Void) {
 

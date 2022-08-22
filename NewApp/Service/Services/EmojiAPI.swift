@@ -1,28 +1,28 @@
 //
-//  RepoService.swift
+//  EmojiService.swift
 //  NewApp
 //
-//  Created by Nyazik Byashimova on 19.08.2022.
+//  Created by Nyazik Byashimova on 17.08.2022.
 //
 
 import Foundation
 import Moya
 
-public enum RepoService {
+public enum EmojiAPI {
     
-    case getRepos
+    case getEmojies
     
 }
 
-extension RepoService : TargetType {
+extension EmojiAPI : TargetType {
     public var baseURL: URL {
         return URL.init(string: NetworkManager.baseUrl)!
     }
     
     public var path: String {
         switch self {
-        case .getRepos:
-            return "users/apple/repos"
+        case .getEmojies:
+            return "emojis"
         }
     }
     

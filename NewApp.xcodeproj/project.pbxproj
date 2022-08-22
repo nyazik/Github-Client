@@ -12,7 +12,7 @@
 		552050DE28AD056300197862 /* SearchBar+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552050DD28AD056300197862 /* SearchBar+extension.swift */; };
 		552050E128AD066900197862 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552050E028AD066900197862 /* NavigationHelper.swift */; };
 		552050E528AD0AC800197862 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552050E428AD0AC800197862 /* NetworkManager.swift */; };
-		552050E928AD174200197862 /* EmojiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552050E828AD174200197862 /* EmojiService.swift */; };
+		552050E928AD174200197862 /* EmojiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552050E828AD174200197862 /* EmojiAPI.swift */; };
 		552050EB28AD216700197862 /* EmojiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552050EA28AD216700197862 /* EmojiManager.swift */; };
 		552050EE28AD228300197862 /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552050ED28AD228300197862 /* EmojiModel.swift */; };
 		5585458828B0C71D00844483 /* PreviousSearchOfAvatarsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5585458728B0C71D00844483 /* PreviousSearchOfAvatarsCollectionViewController.swift */; };
@@ -37,11 +37,11 @@
 		55FC29E828AE934A00C4670E /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29E728AE934A00C4670E /* UIImageViewExtension.swift */; };
 		55FC29EA28AF880200C4670E /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29E928AF880200C4670E /* MainViewViewModel.swift */; };
 		55FC29EC28AFA02700C4670E /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29EB28AFA02700C4670E /* UIImage+extension.swift */; };
-		55FC29EE28AFA85800C4670E /* RepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29ED28AFA85800C4670E /* RepoService.swift */; };
+		55FC29EE28AFA85800C4670E /* RepoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29ED28AFA85800C4670E /* RepoAPI.swift */; };
 		55FC29F028AFA88E00C4670E /* RepoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29EF28AFA88E00C4670E /* RepoManager.swift */; };
 		55FC29F228AFA8CD00C4670E /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29F128AFA8CD00C4670E /* RepoModel.swift */; };
 		55FC29F428AFAD3F00C4670E /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29F328AFAD3F00C4670E /* ReposViewModel.swift */; };
-		55FC29F628B0390B00C4670E /* AvatarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29F528B0390B00C4670E /* AvatarService.swift */; };
+		55FC29F628B0390B00C4670E /* AvatarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29F528B0390B00C4670E /* AvatarAPI.swift */; };
 		55FC29F828B03BFD00C4670E /* AvatarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29F728B03BFD00C4670E /* AvatarManager.swift */; };
 		55FC29FA28B03CDE00C4670E /* AvatarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29F928B03CDE00C4670E /* AvatarModel.swift */; };
 		55FC29FC28B0B6C400C4670E /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC29FB28B0B6C400C4670E /* AvatarViewController.swift */; };
@@ -55,7 +55,7 @@
 		552050DD28AD056300197862 /* SearchBar+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchBar+extension.swift"; sourceTree = "<group>"; };
 		552050E028AD066900197862 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		552050E428AD0AC800197862 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		552050E828AD174200197862 /* EmojiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiService.swift; sourceTree = "<group>"; };
+		552050E828AD174200197862 /* EmojiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiAPI.swift; sourceTree = "<group>"; };
 		552050EA28AD216700197862 /* EmojiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiManager.swift; sourceTree = "<group>"; };
 		552050ED28AD228300197862 /* EmojiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
 		5585458728B0C71D00844483 /* PreviousSearchOfAvatarsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousSearchOfAvatarsCollectionViewController.swift; sourceTree = "<group>"; };
@@ -82,11 +82,11 @@
 		55FC29E728AE934A00C4670E /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		55FC29E928AF880200C4670E /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 		55FC29EB28AFA02700C4670E /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
-		55FC29ED28AFA85800C4670E /* RepoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoService.swift; sourceTree = "<group>"; };
+		55FC29ED28AFA85800C4670E /* RepoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoAPI.swift; sourceTree = "<group>"; };
 		55FC29EF28AFA88E00C4670E /* RepoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoManager.swift; sourceTree = "<group>"; };
 		55FC29F128AFA8CD00C4670E /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
 		55FC29F328AFAD3F00C4670E /* ReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
-		55FC29F528B0390B00C4670E /* AvatarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarService.swift; sourceTree = "<group>"; };
+		55FC29F528B0390B00C4670E /* AvatarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarAPI.swift; sourceTree = "<group>"; };
 		55FC29F728B03BFD00C4670E /* AvatarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarManager.swift; sourceTree = "<group>"; };
 		55FC29F928B03CDE00C4670E /* AvatarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarModel.swift; sourceTree = "<group>"; };
 		55FC29FB28B0B6C400C4670E /* AvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
@@ -166,18 +166,262 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		5585459328B1234100844483 /* Views */ = {
+		552551B028B3C09A00463E48 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				55D2F88928A6CDC0000FC121 /* Cells */,
-				55FBA05628A6B2AD002CBC37 /* LaunchScreen.storyboard */,
-				55FBA05128A6B2AD002CBC37 /* Main.storyboard */,
+				552551CD28B3C38A00463E48 /* LaunchScreen */,
+				552551C828B3C35600463E48 /* MainScreen */,
+				552551C328B3C2B100463E48 /* SearchAvatar */,
+				552551BD28B3C23D00463E48 /* PreviousSearch */,
+				552551B728B3C19300463E48 /* Emoji */,
+				552551B128B3C0DE00463E48 /* Repositories */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		552551B128B3C0DE00463E48 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				552551B428B3C16500463E48 /* View */,
+				552551B328B3C11E00463E48 /* ViewModel */,
+				552551B228B3C11300463E48 /* Controller */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		552551B228B3C11300463E48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55FBA06228A6B307002CBC37 /* ReposViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		552551B328B3C11E00463E48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				55FC29F328AFAD3F00C4670E /* ReposViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		552551B428B3C16500463E48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				552551B628B3C17100463E48 /* Storyboard */,
+				552551B528B3C16B00463E48 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		552551B528B3C16B00463E48 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				55D2F88A28A6CDE7000FC121 /* RepoCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		552551B628B3C17100463E48 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				5585459128B1226C00844483 /* Repos.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		552551B728B3C19300463E48 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				552551BA28B3C1B500463E48 /* View */,
+				552551B928B3C1AE00463E48 /* Controller */,
+				552551B828B3C1A600463E48 /* ViewModel */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
+		552551B828B3C1A600463E48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				55FC29E328AE583900C4670E /* LlistOfEmojiesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		552551B928B3C1AE00463E48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55FC29E128AE54F500C4670E /* EmojiListCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		552551BA28B3C1B500463E48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				552551BC28B3C1CD00463E48 /* StoryBoard */,
+				552551BB28B3C1BE00463E48 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		552551BB28B3C1BE00463E48 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				55FC29E528AE7C4500C4670E /* EmojiCellCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		552551BC28B3C1CD00463E48 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
 				5585459428B1236400844483 /* Emojies.storyboard */,
-				5585459628B123B800844483 /* SearchAvatar.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		552551BD28B3C23D00463E48 /* PreviousSearch */ = {
+			isa = PBXGroup;
+			children = (
+				552551C028B3C25200463E48 /* View */,
+				552551BF28B3C24B00463E48 /* Controller */,
+				552551BE28B3C24500463E48 /* ViewModel */,
+			);
+			path = PreviousSearch;
+			sourceTree = "<group>";
+		};
+		552551BE28B3C24500463E48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5585458928B0C76500844483 /* PreviousSearchOfAvatarsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		552551BF28B3C24B00463E48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5585458728B0C71D00844483 /* PreviousSearchOfAvatarsCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		552551C028B3C25200463E48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				552551C228B3C28700463E48 /* Cell */,
+				552551C128B3C27700463E48 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		552551C128B3C27700463E48 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				5585459828B123EE00844483 /* PreviousSearch.storyboard */,
 			);
-			path = Views;
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		552551C228B3C28700463E48 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5585458D28B11DE500844483 /* PreviousSearchCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		552551C328B3C2B100463E48 /* SearchAvatar */ = {
+			isa = PBXGroup;
+			children = (
+				552551C628B3C32600463E48 /* View */,
+				552551C528B3C2CA00463E48 /* ViewModel */,
+				552551C428B3C2BE00463E48 /* Controller */,
+			);
+			path = SearchAvatar;
+			sourceTree = "<group>";
+		};
+		552551C428B3C2BE00463E48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55FC29FB28B0B6C400C4670E /* AvatarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		552551C528B3C2CA00463E48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5585458F28B121AC00844483 /* SearchAvatarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		552551C628B3C32600463E48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				552551C728B3C32D00463E48 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		552551C728B3C32D00463E48 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5585459628B123B800844483 /* SearchAvatar.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		552551C828B3C35600463E48 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				552551CB28B3C37500463E48 /* View */,
+				552551CA28B3C36B00463E48 /* Controller */,
+				552551C928B3C35F00463E48 /* ViewModel */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		552551C928B3C35F00463E48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				55FC29E928AF880200C4670E /* MainViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		552551CA28B3C36B00463E48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				552050D828ACFA6800197862 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		552551CB28B3C37500463E48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				552551CC28B3C37900463E48 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		552551CC28B3C37900463E48 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				55FBA05128A6B2AD002CBC37 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		552551CD28B3C38A00463E48 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				55FBA05628A6B2AD002CBC37 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		55D2F88028A6BBA6000FC121 /* Service */ = {
@@ -190,34 +434,12 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		55D2F88628A6C632000FC121 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				55FC29E328AE583900C4670E /* LlistOfEmojiesViewModel.swift */,
-				55FC29F328AFAD3F00C4670E /* ReposViewModel.swift */,
-				5585458928B0C76500844483 /* PreviousSearchOfAvatarsViewModel.swift */,
-				55FC29E928AF880200C4670E /* MainViewViewModel.swift */,
-				5585458F28B121AC00844483 /* SearchAvatarViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		55D2F88928A6CDC0000FC121 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				55D2F88A28A6CDE7000FC121 /* RepoCell.swift */,
-				55FC29E528AE7C4500C4670E /* EmojiCellCollectionViewCell.swift */,
-				5585458D28B11DE500844483 /* PreviousSearchCollectionViewCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		55D8107D28AE444400502F96 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				552050E828AD174200197862 /* EmojiService.swift */,
-				55FC29ED28AFA85800C4670E /* RepoService.swift */,
-				55FC29F528B0390B00C4670E /* AvatarService.swift */,
+				552050E828AD174200197862 /* EmojiAPI.swift */,
+				55FC29ED28AFA85800C4670E /* RepoAPI.swift */,
+				55FC29F528B0390B00C4670E /* AvatarAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -243,28 +465,14 @@
 		55FBA04A28A6B2AD002CBC37 /* NewApp */ = {
 			isa = PBXGroup;
 			children = (
+				552551B028B3C09A00463E48 /* Screens */,
 				552050E628AD14FD00197862 /* Application */,
 				552050DF28AD065C00197862 /* Utilities */,
-				55D2F88628A6C632000FC121 /* ViewModels */,
 				55D2F88028A6BBA6000FC121 /* Service */,
-				55FBA05F28A6B2C3002CBC37 /* Controllers */,
-				5585459328B1234100844483 /* Views */,
 				55FBA05428A6B2AD002CBC37 /* Assets.xcassets */,
 				55FBA05928A6B2AD002CBC37 /* Info.plist */,
 			);
 			path = NewApp;
-			sourceTree = "<group>";
-		};
-		55FBA05F28A6B2C3002CBC37 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				55FBA06228A6B307002CBC37 /* ReposViewController.swift */,
-				552050D828ACFA6800197862 /* MainViewController.swift */,
-				55FC29E128AE54F500C4670E /* EmojiListCollectionViewController.swift */,
-				55FC29FB28B0B6C400C4670E /* AvatarViewController.swift */,
-				5585458728B0C71D00844483 /* PreviousSearchOfAvatarsCollectionViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		9B79FFFF0B68A90F7B371C56 /* Frameworks */ = {
@@ -394,16 +602,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552050E928AD174200197862 /* EmojiService.swift in Sources */,
+				552050E928AD174200197862 /* EmojiAPI.swift in Sources */,
 				552050E528AD0AC800197862 /* NetworkManager.swift in Sources */,
 				552050EB28AD216700197862 /* EmojiManager.swift in Sources */,
 				55FBA06328A6B307002CBC37 /* ReposViewController.swift in Sources */,
 				55FBA04C28A6B2AD002CBC37 /* AppDelegate.swift in Sources */,
-				55FC29EE28AFA85800C4670E /* RepoService.swift in Sources */,
+				55FC29EE28AFA85800C4670E /* RepoAPI.swift in Sources */,
 				55FC29E428AE583900C4670E /* LlistOfEmojiesViewModel.swift in Sources */,
 				55FC29F228AFA8CD00C4670E /* RepoModel.swift in Sources */,
 				5585458A28B0C76500844483 /* PreviousSearchOfAvatarsViewModel.swift in Sources */,
-				55FC29F628B0390B00C4670E /* AvatarService.swift in Sources */,
+				55FC29F628B0390B00C4670E /* AvatarAPI.swift in Sources */,
 				5585458C28B10FD400844483 /* SavesAvatarsModel.swift in Sources */,
 				5585459028B121AC00844483 /* SearchAvatarViewModel.swift in Sources */,
 				55FC29E828AE934A00C4670E /* UIImageViewExtension.swift in Sources */,

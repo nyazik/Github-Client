@@ -23,15 +23,7 @@ class EmojiListCollectionViewController: UICollectionViewController, UICollectio
         customizeUI()
     }
     
-    func customizeUI() {
-        self.collectionView.backgroundColor = .blue
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.title = "EmojiList"
-    }
-    
-    @IBAction func backButton(_ sender: Any) {
-        self.dismiss(animated: false)
-    }
+    //MARK: - UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         if emojiListVM == nil {
@@ -63,5 +55,26 @@ class EmojiListCollectionViewController: UICollectionViewController, UICollectio
         return UIEdgeInsets(top: 25, left: 15, bottom: 0, right: 15)
     }
     
+}
+
+//MARK: - UI
+
+extension EmojiListCollectionViewController {
+    
+    func customizeUI() {
+        self.collectionView.backgroundColor = .blue
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.title = "EmojiList"
+    }
+    
+}
+
+//MARK: - ACTIONS
+
+extension EmojiListCollectionViewController {
+    
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: false)
+    }
     
 }
